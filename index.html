@@ -6,15 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Kufam&family=Reem+Kufi&family=Tajawal:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+
+
+
   </head>
   <body style="background-color: #1d1d22;">
-    <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-dark">
+    <div id="top"></div>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <a class="navbar-brand" href="#">
+          <img src="Images/logo.png" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto flex-column-reverse flex-md-row ">
+        <li class="nav-item pr-1 col-md-2.4">
+          <a class="nav-link" id="four" href="#">تواصل معنا</a>
+      </li>
+          <li class="nav-item pr-2 col-md-2.4">
+              <a class="nav-link" id="three" href="#">خدماتنا</a>
+          </li>
+          <li class="nav-item pr-2 col-md-2.4">
+              <a class="nav-link" id="two" href="#">أعمال سيرفرسوفت</a>
+          </li>
+          <li class="nav-item pr-2 col-md-2.4">
+              <a class="nav-link" id="one" href="#">نبذه عنا</a>
+          </li>
+          <li class="nav-item  pr-2 col-md-2.4">
+              <a class="nav-link active" href="#">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+          </li>
+      </ul>
+    </div>
+
+</nav>
+
+  
+
+<!--     <nav class="navbar navbar-expand-md  bg-dark navbar-dark">
       <a class="navbar-brand" href=""> <img src="Images/logo.png" alt=""> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,22 +65,21 @@
               <a class="nav-link" href="#">تواصل معنا</a>
           </li>
               <li class="nav-item pr-2">
+                  <a class="nav-link" href="#">خدماتنا</a>
+              </li>
+              <li class="nav-item pr-2">
+                  <a class="nav-link" href="#">أعمال سيرفرسوفت</a>
+              </li>
+              <li class="nav-item pr-2">
                   <a class="nav-link" href="#">نبذه عنا</a>
-              </li>
-              <li class="nav-item pr-2">
-                  <a class="nav-link" href="#">سابقة أعمال الشركة</a>
-              </li>
-              <li class="nav-item pr-2">
-                  <a class="nav-link" href="#">كلمتنا</a>
               </li>
               <li class="nav-item  pr-2">
                   <a class="nav-link active" href="#">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
               </li>
           </ul>
       </div>
-  </nav>
+  </nav> -->
 
-  
   <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -52,7 +91,7 @@
         <img class="d-block w-100" src="Images/background1.webp" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="Images/background2.webp" alt="Second slide">
+        <img class="d-block w-100" src="Images/background2.webp" alt="Third slide">
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="Images/background3.webp" alt="Third slide">
@@ -75,10 +114,10 @@
   
 
  
-  <div class="mgk ">
+  <div class="mgk " id="about">
 
-    <p class="h1 text-center h-att glow" data-aos="fade-up"
-    data-aos-duration="3000">كلمتنا</p>
+    <p class="h1 text-center h-att glow" data-aos="flip-down"
+    data-aos-duration="2000">نبذه عنا</p>
     <div class="effect-balls">
       <div class="container">
         <div class="dots">
@@ -95,7 +134,8 @@
          
         </div>
         
-        <p class="text-center h-att line-lenght line-bck" data-aos="flip-left" data-aos-duration="2000">.في ظل هذا التطور التكنولجي و المعلوماتي و زيادة النمو و مواكبة التقدم الأقتصادي و سرعة ادخال البيانات و الحصول علي التقارير اصبح لابد للشركات الكبيرة والمتوسطة الحجم من اللجزء الي الكمبيوتر لسرعة ادخال البيانات و التعامل معها كما انه ثبتت الانظمة الحسابية المبرمجة مدي كفائئتها و دقتها و عدم وجود عنصر الخطأ البشري فيها و امكانية ادارةالمشروعات ومراقبتها عن بعد وقد كان لشركة سيرفر سوفت حظ كبير في هذا التخصص في السوق المصري حيث ان الشركة تم تأسسيها مع بداية وجود العصر المعلوماتي في مصر منذ عام 2008 </p>
+        <p class="text-center h-att line-lenght line-bck"data-aos="fade-up"
+        data-aos-duration="2000">شركة سيرفرسوفت هي شركة متوسطة الحجم و هي شركة مساهمة مصرية تعمل في مجال البرمجة و الحلول الذكية منذ أكثر من 10 سنوات داخل و خارج السوق المصري حيث تم تأسسيس الشركة في عام 2008</p>
       </div>
 
     </div>
@@ -105,7 +145,9 @@
   </div>
 
 
-  <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+    <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+
+
 
   <div class="row">
     <div class="m-3"></div>
@@ -122,23 +164,23 @@
                 <div class="numbers-item mx-auto">
                   <div class="number-item col-3" data-aos="flip-left" data-aos-duration="2000">
                       <i class="icon fa fa-users fa-2x"></i>
-                      <h3 class="number-item-title">451</h3>
-                      <span class="number-item-text">Happy Clients</span>
+                      <h3 class="number-item-title">1000</h3>
+                      <span class="number-item-text">عدد العملاء</span>
                   </div>
                   <div class="number-item col-3"data-aos="flip-left" data-aos-duration="1500">
                       <i class="icon fa fa-trophy fa-2x"></i>
-                      <h3 class="number-item-title">451</h3>
-                      <span class="number-item-text">Happy Clients</span>
+                      <h3 class="number-item-title">12</h3>
+                      <span class="number-item-text">سنوات العمل</span>
                   </div>
                   <div class="number-item col-3"data-aos="flip-left" data-aos-duration="1000">
                       <i class="icon fa fa-coffee fa-2x"></i>
-                      <h3 class="number-item-title">451</h3>
-                      <span class="number-item-text">Happy Clients</span>
+                      <h3 class="number-item-title">25</h3>
+                      <span class="number-item-text">الدعم الفني</span>
                   </div>
                   <div class="number-item col-3" data-aos="flip-left" data-aos-duration="500">
-                      <i class="icon fa fa-file fa-2x"></i>
-                      <h3 class="number-item-title">451</h3>
-                      <span class="number-item-text">Happy Clients</span>
+                      <i class="icon fa fa-smile-o fa-2x"></i>
+                      <h3 class="number-item-title">1000</h3>
+                      <span class="number-item-text">عميل سعيد</span>
                   </div>
               </div>
 
@@ -151,32 +193,9 @@
 
     </div>
 
-  <div class="mgk " >
+  <div class="mgk " id="work" >
 
-  <p class="h1 text-center h-att glow mt-5"  data-aos-duration="2500">أعمال الشركة</p>
-
-
-    <div class="effect-balls">
-      <div class="container">
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          
-        </div>
-
-          <div class="row">
-            <span class="mx-auto col br-line"></span>
-
-          </div>
-
-         
-
-        <p class="text-center h-att line-lenght line-bck ">	يسعدنا ان الشركة قد ولازالت تقدم خدماتها علي مر السنوات و انها لدينا شركات و مؤسسات كبيرة قد وثقت في خدماتنا و تقديم برمجنا لهم و انهم الي الان و حتي االنهاية سيظل لنا شركاء النجاح و نحن نسعد  بخدماتهم فقد قامت الشركة بتقديم و بيع البرنامج لشركات و هيئات كبري في مجالات عديدة و نسعد بتقديم الخدمة و الدعم الفني لهم الي الابد  </p>
-
+  <p class="h1 text-center h-att glow mt-5" data-aos="zoom-in"  data-aos-duration="2500">أعمال سيرفرسوفت</p>
 
     </div>
 
@@ -215,14 +234,14 @@
                   </div>
                   <div class="card-bottom">
                       <ul>
-                          <li><i class="fas fa-calendar-alt"></i>سنتر فراج</li>
-                          <li><i class="far fa-clock"></i>اشراف علي فايد</li>
-                          <li><i class="fas fa-map-marker-alt"></i>مكتبات مصر</li>
+                          <li>سنتر فراج</li>
+                          <li>اشراف علي فايد</li>
+                          <li>مكتبات مصر</li>
                           <li>مكتبات الاسكندرية </li>
-                          <li><i class="far fa-map"></i>المهندسون المتحدون</li>
-                          <li><i class="far fa-map"></i>الحمد للاستيراد والتصدير</li>
-                          <li><i class="far fa-map"></i>مكتبات صقر العلوم الحديثة</li>
-                          <li><i class="far fa-map"></i>نجمة الفجالة</li>
+                          <li>المهندسون المتحدون</li>
+                          <li>الحمد للاستيراد والتصدير</li>
+                          <li>مكتبات صقر العلوم الحديثة</li>
+                          <li>نجمة الفجالة</li>
                       </ul>
                   </div>
                   <div class="card-buttons mt-30">
@@ -234,16 +253,16 @@
           data-aos-duration="2000">
               <div class="single-card text-center mb-30">
                   <div class="card-top">
-                      <span class="flaticon-award"></span>
+                      <span class="flaticon-social-media-marketing"></span>
                       <h4>الهيئات حكومية</h4>
                   </div>
                   <div class="card-bottom">
                       <ul>
-                          <li><i class="fas fa-calendar-alt"></i>مستشفي النيل الجامعي</li>
-                          <li><i class="far fa-clock"></i>قسم قسطرة القلب</li>
-                          <li>أخر</li>
-                          <li>أخر</li>
-                          <li>أخر</li>
+                          <li>مستشفي النيل الجامعي</li>
+                          <li> قسم قسطرة القلب</li>
+                          <li> أخر</li>
+                          <li> أخر</li>
+                          <li> أخر</li>
                       </ul>
                   </div>
                   <div class="card-buttons mt-30">
@@ -254,13 +273,262 @@
       </div>
 
       </div>
+      <div class="clear"></div>
 
+      <div class="Services" id="services">
+        <div class="container-fluid mb-5">
+          <div class="text-center mt-5">
+              <h1 class="h1">خدماتنا</h1>
+              <div class="row ">
+                <span class="br-line text-center mx-auto mb-5" data-aos="zoom-in" data-aos-duration="3000"></span>
+               
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="box .tb-effect ">
+                      <div class="our-services settings " data-aos="fade-right" data-aos-duration="2000">
 
-
-
-
+                          <div class="icon"> <img src="Images/MP.png"> </div>
+                          <h4>Medico-Plan</h4>
+                          <p>هو برنامج خاص بالمجال الطبي يمكن تطبيقه في المستشفيات و العيادات الخاصة و غيرها حيث يتيح إدخال بيانات المريض و حالته ونوع المرض و غيره</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="box">
+                      <div class="our-services speedup" data-aos="fade-down" data-aos-duration="1000">
+                          <div class="icon"> <img src="Images/SP.png"> </div>
+                          <h4>San-Parts</h4>
+                          <p>هو برنامج خاص بمركز الصيانة و التوكيلات و المراكز التي تتعامل مع أرقام القطع والسيريال</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="box">
+                      <div class="our-services privacy" data-aos="fade-left" data-aos-duration="2000">
+                          <div class="icon"> <img src="Images/SB.png"> </div>
+                          <h4>Smart Business</h4>
+                          <p>هو أكثر البرامج المحاسبية و المخزنية التي تم بيعها و التعامل معها في السوق المصري و هو برنامج عام يمكن تطبيقه مع أنشطة كثيرة</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="box">
+                      <div class="our-services backups" data-aos="fade-right" data-aos-duration="2000">
+                          <div class="icon"> <img src="Images/M.png"> </div>
+                          <h4>Markado</h4>
+                          <p>هو برنامج خاص بالهايبر ماركت و الأنشطة المتعلقة بالمنتجات الغذائية و إصدار فواتير المبيعات و المشتريات و متابعة المخزون و تاريخ الإنتاج و صلاحية</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="box">
+                      <div class="our-services ssl" data-aos="fade-up" data-aos-duration="1000">
+                          <div class="icon"> <img src="Images/C.png"> </div>
+                          <h4>Contractor</h4>
+                          <p>برنامج حسابات لإدارة مراكز الصيانة والدعم الفني. يمكنك أن تقوم بإنشاء نماذج فواتير لعمليات صيانة السيارات  وإدارة مخزونك من المنتجات وقطع الغيار  </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="box">
+                      <div class="our-services database" data-aos="fade-left" data-aos-duration="2000">
+                          <div class="icon"> <img src="Images/I.png" > </div>
+                          <h4>Ideal</h4>
+                          <p>هو برنامج خاص بشؤون العاملين والحضور و الإنصراف و التأمينات و متابعةالإنجازات و الأذونات و الأرصدة و تقارير عن المواظفين</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
       </div>
+
+      <div class="container contact-form" id="contact">
+        <div class="contact-image">
+            <img src="Images/contactus.png" id="loading" alt="rocket_contact"/>
+        </div>
+        <form method="post" >
+            <h3>تواصل معنا</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group ah">
+                        <input type="text" name="txtName" class="form-control" placeholder="إسمك" value="" />
+                    </div>
+                    <div class="form-group ah">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="إيميلك" value="" />
+                    </div>
+                    <div class="form-group ah">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="رقم هاتفك" value="" />
+                    </div>
+                    <div class="form-group ah">
+                      <div class="card-buttons mr-5 ">
+                        <input type="submit" name="btnSubmit" class="btn card-btn1" value="إرسال رسالة" />
+         
+                    </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="رسالتك" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+
+<footer id="dk-footer" class="dk-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 col-lg-4">
+              <div class="dk-footer-box-info">
+                  <a href="index.html" class="footer-logo">
+                      <img src="Images/Logo.png" alt="footer_logo" class="img-fluid">
+                  </a>
+                  <p class="footer-info-text">
+                    شركة سيرفرسوفت هي شركة متوسطة الحجم و هي شركة مساهمة مصرية تعمل في مجال البرمجة و الحلول الذكية منذ أكثر من 10 سنوات داخل و خارج السوق المصري حيث تم تأسسيس الشركة في عام 2008
+                  </p>
+                  <div class="footer-social-link">
+
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-google-plus"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-linkedin"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  <i class="fa fa-instagram"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- End Social link -->
+              </div>
+              <!-- End Footer info -->
+              <div class="footer-awarad">
+                  
+                  
+              </div>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="contact-us">
+                          <div class="contact-icon">
+                              <i class="fa fa-map-o" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info">
+                              <h3>محافظة القاهرة, مصر</h3>
+                              <p>كامل صدقي الفجالة رمسيس</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+                  <div class="col-md-6">
+                      <div class="contact-us contact-us-last">
+                          <div class="contact-icon">
+                              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                          </div>
+                          <!-- End contact Icon -->
+                          <div class="contact-info">
+                              <h3>02 111 418 1088</h3>
+                              
+                              <p>إتصل بنا الأن</p>
+                          </div>
+                          <!-- End Contact Info -->
+                      </div>
+                      <!-- End Contact Us -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Contact Row -->
+              <div class="row">
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget footer-left-widget">
+
+
+                        
+                      </div>
+                      <!-- End Footer Widget -->
+                  </div>
+                  <!-- End col -->
+                  <div class="col-md-12 col-lg-6">
+                      <div class="footer-widget">
+
+ 
+                          <form action="#">
+                              <div class="form-row">
+                                  <div class="col dk-footer-form">
+                                      <input type="email" class="form-control" placeholder="                                                 إيميلك">
+                                      <button type="submit" class="send-email">
+                                          <i class="fa fa-send"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </form>
+                          <!-- End form -->
+                      </div>
+                      <!-- End footer widget -->
+                  </div>
+                  <!-- End Col -->
+              </div>
+              <!-- End Row -->
+          </div>
+          <!-- End Col -->
+      </div>
+      <!-- End Widget Row -->
+  </div>
+  <!-- End Contact Container -->
+
+
+  <div class="copyright">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <span>Copyright © 2021, All Right Reserved Mostafa Karam</span>
+              </div>
+              <!-- End Col -->
+             
+              <!-- End col -->
+          </div>
+          <!-- End Row -->
+      </div>
+      <!-- End Copyright Container -->
+  </div>
+  <!-- End Copyright -->
+  <!-- Back to top -->
+  <div id="back-to-top" class="back-to-top">
+      <button class="btn btn-dark" title="Back to Top" style="display: block;">
+          <i class="fa fa-angle-up"></i>
+      </button>
+  </div>
+  <!-- End Back to top -->
+</footer>
+
 
 
     <!-- Optional JavaScript -->
@@ -287,8 +555,8 @@
   <script>
   var myWave = $('#myID').wavify({
   height: 180,
-  bones: 1,
-  amplitude: 10,
+  bones: 2,
+  amplitude: 15,
   color: '#343A40',
   speed: .25
 });
@@ -305,5 +573,42 @@ $('#site').click(function(e) {
     return false;
 });
   </script>
+  <script>
+    $("#one").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 2000);
+});
+  </script>
+    </script>
+    <script>
+      $("#two").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#work").offset().top
+      }, 2000);
+  });
+    </script>
+        <script>
+          $("#three").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#services").offset().top
+          }, 2000);
+      });
+        </script>
+                <script>
+                  $("#four").click(function() {
+                  $('html, body').animate({
+                      scrollTop: $("#contact").offset().top
+                  }, 2000);
+              });
+                </script>
+                <script>
+                  $("#back-to-top").click(function() {
+                  $('html, body').animate({
+                      scrollTop: $("#top").offset().top
+                  }, 2000);
+              });
+                </script>                
+                
   </body>
 </html>
